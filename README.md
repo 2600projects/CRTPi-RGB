@@ -1,3 +1,7 @@
+# This is a Fork of the CRTPi-RGB Fork
+The Fork is intended to be a spot to make changes related to my own projects without interfering with and cluttering up the main branch.
+
+
 # CRTPi-Project Presents: CRTPi-RGB
 *A Vanilla+ experience for 15Khz Analog Output over RGB!*
 _____
