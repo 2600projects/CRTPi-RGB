@@ -72,6 +72,15 @@
     <platform>atari800</platform>
     <theme>atari800</theme>
   </system>
+<system>
+    <name>amstradcpc</name>
+    <fullname>Amstrad CPC</fullname>
+    <path>/home/pi/RetroPie/roms/amstradcpc</path>
+    <extension>.cdt .cpc .dsk .CDT .CPC .DSK</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ amstradcpc %ROM%</command>
+    <platform>amstradcpc</platform>
+    <theme>amstradcpc</theme>
+  </system>
   <system>
     <name>c64</name>
     <fullname>Commodore 64</fullname>
@@ -278,6 +287,16 @@
     <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ n64 %ROM%</command>
     <platform>n64</platform>
     <theme>n64</theme>
+  </system>
+<system>
+    <name>ags</name>
+    <fullname>Adventure Game Studio</fullname>
+    <path>~/RetroPie/roms/ags</path>
+    <extension>.exe</extension>
+
+   <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ ags %ROM%</command>
+    <platform>ags</platform>
+    <theme>ags</theme>
   </system>
 <system>
     <name>gbc</name>
