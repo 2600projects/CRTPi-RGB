@@ -1,6 +1,6 @@
 # This is a Fork of the CRTPi-RGB Fork
 The Fork is intended to be a spot to make changes related to my own projects without interfering with and cluttering up the main CRTPi-RGB Project branch.
-For more information, see the original Readme farther below.
+For more information, see the original Readme farther below for the list of people who really worked on this project.
 
 # README Still in work
 
