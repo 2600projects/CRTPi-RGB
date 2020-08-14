@@ -12,7 +12,7 @@ For more information, see the original Readme farther below for the list of peop
     Raspberry Pi 3B or 3B+
     2600 RPi Adapter
     5v 2.5A Micro USB power supply or Original Power Supply
-    4GB+ SD Card
+    8GB+ SD Card
     
 _____
 
@@ -50,8 +50,6 @@ _____
     **At this point, HDMI will no longer be used**
     Put SD card back in Pi and power on while connected to your output device
     Quit EmulationStation to go to the commandline or connect via SSH
-    
-    **Need to add Instructions to change ownership to EmulationStation directory files**
     Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
     Restore execute access to the runcommand scripts with the command "sudo chmod a+rwx /opt/retropie/configs/all/*.sh"
     Restore read/write access to files with the command "sudo chmod a+rw -R /home/pi/RetroPie/splashscreens/"
