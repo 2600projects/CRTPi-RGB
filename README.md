@@ -1,7 +1,68 @@
 # This is a Fork of the CRTPi-RGB Fork
-The Fork is intended to be a spot to make changes related to my own projects without interfering with and cluttering up the main branch.
+The Fork is intended to be a spot to make changes related to my own projects without interfering with and cluttering up the main CRTPi-RGB Project branch.
+For more information, see the original Readme farther below for the list of people who really did the work on this project.
+
+# README Still in work
+
+**The Instructions below are only intended for people who want to create their own image.**
+
+**Instructions**
+**Required Hardware:**
+
+    Raspberry Pi 3B or 3B+
+    2600 RPi Adapter
+    5v 2.5A Micro USB power supply or Original Power Supply
+    8GB+ SD Card
+    
+_____
+
+**Recommended Optional Prerequisites: Follow the instructions below on when to install these.  They must be installed prior to installing the zips!** 
+
+	Install the following themes: snes-mini, gbz35, gbz35-dark
+	Install the following opt packages: lr-fbalpha2012, lr-mame2000, lr-mame2010, lr-snes9x2002, scraper, skyscraper
+	Install the following experimental packages: lr-mame2003-plus, lr-mame2016
+	
+	
+**Optional Prerequisites: Optional packages some may use and can be installed at any time** 
+
+	Install the following themes: minijawn, Super-Retroboy
+	Install the following opt packages:
+	Install the following experimental packages: lr-mame, attractmode, retropie-manager
+
+_____
+
+**Instructions: This is recommended to be installed on a fresh Retropie install on a 3B or 3B+ using the 4.6 official image.**
+**Some basic understanding or familiarity with the Linux command line and RetroPie is recommended**
 
 
+    **Start with the RPI without the adapter plugged in using an HDMI Monitor**
+    Install Retropie
+    Enable SSH, WiFi, SAMBA, etc you may need or use
+    Connect to WiFi or Ethernet with internet access
+    Update Retropie and the underlying OS using Retropie-Setup  (A kernel upgrade changed the audio layout and the zips account for that and need the upgrade)
+    Install any Optional Prerequisites listed above
+    Download or copy the CRTPi-RGB-2600.zip into your root folder (cd /) with the command
+    	"sudo wget https://github.com/2600projects/CRTPi-RGB/raw/master/CRTPi-RGB-2600vX.zip" where X is the release number 
+    Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RGB-2600vX.zip" where X is the release number
+    Remove the zip with the command "sudo rm CRTPi-RGB-2600vX.zip" where X is the release number
+    Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
+    Install any 2600 RPi Adapter
+    **At this point, HDMI will no longer be used**
+    Put SD card back in Pi and power on while connected to your output device
+    Quit EmulationStation to go to the commandline or connect via SSH
+    Restore read/write access to the files you have overwritten with the command  "sudo chmod a+rw -R /opt/retropie/configs/"
+    Restore execute access to the runcommand scripts with the command "sudo chmod a+rwx /opt/retropie/configs/all/*.sh"
+    Restore read/write access to files with the command "sudo chmod a+rw -R /home/pi/RetroPie/splashscreens/"
+    Restore file ownership with "sudo chown -R pi:pi /home/pi/"
+    Restore file ownership with "sudo chown -R pi:pi /opt/retropie/configs/"
+    Launch into RetroPie-Setup with the command "sudo ~/RetroPie-Setup/retropie_setup.sh"
+    Go to "Configuration/Tools > resetromdirs" and run it
+    Choose "Perform Reboot" from the menu to reboot your Pi.
+
+
+
+# -------------------------------------------
+# Original README
 # CRTPi-Project Presents: CRTPi-RGB
 *A Vanilla+ experience for 15Khz Analog Output over RGB!*
 _____
