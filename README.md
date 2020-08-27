@@ -2,7 +2,7 @@
 The Fork is intended to be a spot to make changes related to my own projects without interfering with and cluttering up the main CRTPi-RGB Project branch.
 For more information, see the original Readme farther below for the list of people who really did the work on this project.  Additionaly, see the original project for features and release notes.
 
-# README Still in work
+# README
 
 **The Instructions below are only intended for people who want to create their own image.**
 
