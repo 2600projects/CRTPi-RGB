@@ -33,7 +33,7 @@ dpi_mode=87
 #hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 #RGB-Pi 320x240p@60hz
 
 ## 2600 Projects
-dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
+dtoverlay=audremap,pins_18_19			#For Audio
 dtoverlay=vga666-mode6
 dpi_output_format=6
 hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1 #RGB-Pi 320x240p@60hz
