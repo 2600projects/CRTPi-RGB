@@ -7,6 +7,8 @@
 #############################################################################################
 
 ## Analog Audio Settings!!
+## Enable audio (loads snd_bcm2835)
+dtparam=audio=on
 disable_audio_dither=1
 audio_pwm_mode=2
 
@@ -133,8 +135,6 @@ hdmi_drive=2
 
 ## Additional overlays and parameters are documented /boot/overlays/README
 
-## Enable audio (loads snd_bcm2835)
-dtparam=audio=on
 gpu_mem_256=128
 gpu_mem_512=256
 gpu_mem_1024=256

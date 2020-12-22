@@ -41,11 +41,13 @@ _____
     Connect to WiFi or Ethernet with internet access
     Update Retropie and the underlying OS using Retropie-Setup  (A kernel upgrade changed the audio layout and the zips account for that and need the upgrade)
     Install any Optional Prerequisites listed above
+	Make a copy of /boot/cmdline.txt and /boot/config.txt
     Download or copy the CRTPi-RGB-2600v1.zip into your root folder (cd /) with the command
     	"sudo wget https://github.com/2600projects/CRTPi-RGB/releases/download/v1.0/CRTPi-RGB-2600v1.zip"
 		If there is a later release then change the name and location as necessary.
     Unzip and overwrite files with the command "sudo unzip -o -q CRTPi-RGB-2600vX.zip" where X is the release number
     Remove the zip with the command "sudo rm CRTPi-RGB-2600vX.zip" where X is the release number
+	Change cmdline.txt to point to the correct Partition UUID by copying the values after root=PARTUUID= from your original cmdline.txt to the new one.  If this step isn't done, the Pi will not boot.
     Power off the Pi with the command "sudo poweroff" and remove power once the green light stops blinking
     Install any 2600 RPi Adapter
     **At this point, HDMI will no longer be used**
